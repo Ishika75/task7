@@ -1,0 +1,44 @@
+<!Doctype html>
+<html>
+<head>
+<title>DOCKER SERVICES</title>
+<link rel="stylesheet" href="style.css">
+<script src="script2.js"></script>
+
+</head>
+<body class="back">
+
+
+<h1>Commands on WebUI</h1>
+
+<div class="btn-group">
+  <button class ="btn-group b1", onclick="lw('docker images')">Images</button>
+  <button class ="btn-group b2",onclick="lw('docker ps')">Running Containers</button>
+  <button class ="btn-group b3",onclick="lw('docker ps -a')">All Containers</button>
+  <button class ="btn-group b4",onclick="lw1('Enter image:tag')">Launch</button>
+  <button class ="btn-group b5",onclick="lw1('Enter container name/ID to remove')">Remove</button>
+</div>
+<div>
+	<h1>CONNECTING <span class="typeeffect"></span></h1>
+	<p class ="para">This is my team task with my team Summer_08_02.<br>In this task, our approach is to integrate web-development with python-cgi and docker.</p>
+</div>
+<script src="typed.min.js"></script>
+<script>
+	var typed= new Typed('.typeeffect',{
+	strings: ['DOTS', 'TECHNOLOGY', 'PEOPLE'],
+	typeSpeed: 60,
+	backSpeed: 60,
+	loop: true,
+	});
+</script>
+<div id="d1">
+  <p class ="sub">Enter your command here : </p>
+  <input id="in1">	
+  <button id="bt1" onclick='lw();'>Click here</button>
+</div>
+<div>
+  <pre id="id1">your output will be printed here</pre>
+</div>
+
+</body>
+</html>
